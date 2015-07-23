@@ -71,7 +71,6 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     columnize (0.9.0)
-    commonjs (0.2.7)
     database_cleaner (1.4.1)
     debug_inspector (0.0.2)
     devise (3.5.1)
@@ -143,13 +142,6 @@ GEM
       activesupport (>= 3.0.0)
     launchy (2.4.3)
       addressable (~> 2.3)
-    less (2.6.0)
-      commonjs (~> 0.2.7)
-    less-rails (2.7.0)
-      actionpack (>= 4.0)
-      less (~> 2.6.0)
-      sprockets (> 2, < 4)
-      tilt
     letter_opener (1.4.1)
       launchy (~> 2.2)
     libv8 (3.16.14.11)
@@ -253,6 +245,13 @@ GEM
     ruby_parser (3.7.0)
       sexp_processor (~> 4.1)
     rubyzip (1.1.7)
+    sass (3.4.16)
+    sass-rails (5.0.3)
+      railties (>= 4.0.0, < 5.0)
+      sass (~> 3.1)
+      sprockets (>= 2.8, < 4.0)
+      sprockets-rails (>= 2.0, < 4.0)
+      tilt (~> 1.1)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -288,7 +287,7 @@ GEM
       ref
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (2.0.1)
+    tilt (1.4.1)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
@@ -334,7 +333,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   kaminari
   launchy
-  less-rails
   letter_opener
   mandrill-api
   mysql2
@@ -345,6 +343,7 @@ DEPENDENCIES
   redcarpet
   rspec
   rspec-rails
+  sass-rails
   sdoc (~> 0.4.0)
   seed-fu
   selenium-webdriver

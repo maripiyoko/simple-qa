@@ -1,27 +1,34 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
+
+# Database
 gem 'mysql2'
+gem 'squeel'
+
+# Authentication
+gem 'devise'
+
+# Assets
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'therubyracer', platforms: :ruby
-
-gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
-
-gem 'squeel'
+gem 'sass-rails'
 gem 'haml-rails'
-gem 'less-rails'
+gem 'bower-rails'
+gem 'turbolinks'
 
+# Views
 gem 'simple_form'
-
-gem 'devise'
-gem 'mandrill-api'
 gem 'kaminari'
 gem 'acts-as-taggable-on'
-gem 'bower-rails'
 gem 'redcarpet'
+gem 'jbuilder', '~> 2.0'
+
+# Documentation
+gem 'sdoc', '~> 0.4.0', group: :doc
+
+# Models
 gem 'enumerize'
 gem 'seed-fu'
 
@@ -68,4 +75,7 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem 'rails_12factor', group: :production
+group :production do
+  gem 'rails_12factor'
+  gem 'mandrill-api'
+end
