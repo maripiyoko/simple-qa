@@ -16,6 +16,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'sass-rails'
 gem 'haml-rails'
 gem 'bower-rails'
+gem 'compass-rails'
 gem 'turbolinks'
 
 # Views
